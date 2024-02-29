@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
 }
 
@@ -39,8 +38,19 @@
   font-family: var(--font-mono);
 }
 
-.grid {
+.mainGrid {
   display: grid;
+  grid-template-columns: repeat(2, minmax(25%, 75%));
+  max-width: 100%;
+  width: var(--max-width);
+}
+
+.nav{
+  width: 25%;
+}
+
+.grid {
+  display: flex;
   grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
   width: var(--max-width);
