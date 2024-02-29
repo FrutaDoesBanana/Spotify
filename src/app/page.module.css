@@ -45,10 +45,6 @@
   width: var(--max-width);
 }
 
-.nav{
-  width: 25%;
-}
-
 .grid {
   display: flex;
   grid-template-columns: repeat(4, minmax(25%, auto));
